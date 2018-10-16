@@ -12,6 +12,8 @@ router.register(r'users', views.UserViewSet, base_name='users')
 router.register(r'incidents', views.IncidentViewSet, base_name='incidents')
 router.register(r'artifacts', views.ArtifactViewSet, base_name='artifacts')
 router.register(r'files', views.FileViewSet, base_name='files')
+router.register(r'comments', views.CommentViewSet, base_name='comments')
+router.register(r'labels', views.LabelViewSet, base_name='labels')
 
 # urls for core FIR components
 urlpatterns = [

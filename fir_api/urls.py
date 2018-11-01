@@ -8,12 +8,12 @@ from fir_api import views
 # include login URLs for the browsable API.
 router = routers.DefaultRouter(trailing_slash=False)
 
-router.register(r'users', views.UserViewSet, base_name='users')
+router.register(r'users', views.UserViewSet)
 router.register(r'incidents', views.IncidentViewSet, base_name='incidents')
-router.register(r'artifacts', views.ArtifactViewSet, base_name='artifacts')
-router.register(r'files', views.FileViewSet, base_name='files')
-router.register(r'comments', views.CommentViewSet, base_name='comments')
-router.register(r'labels', views.LabelViewSet, base_name='labels')
+router.register(r'artifacts', views.ArtifactViewSet)
+router.register(r'files', views.FileViewSet)
+router.register(r'comments', views.CommentViewSet)
+router.register(r'labels', views.LabelViewSet)
 
 # urls for core FIR components
 urlpatterns = [
